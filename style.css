@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+html{
+	scroll-behavior: smooth;
+	}
+body{
+	margin:0; 
+	font-family: 'Montserrat', sans-serif;
+ 
+}
+* {
+	box-sizing:border-box; 
+	margin: 0;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	padding:0px 15px;
+	z-index: 11;
+}
+
+header .row{
+	justify-content:space-between;
+	align-items: center; 
+}
+header.fixed{
+	background-color: #ffffff;
+	position: fixed;
+	border-color: #eeeeee;
+	animation:fixHeader .5s ease; 
+	z-index: 11;
+}
+@keyframes fixHeader{
+	0%{
+		transform:translateY(-100%);opacity:0;
+	}
+	100%{
+		transform: translateY(-%);
+	}
+}
+header .logo img{
+	width:120px;
+	height: auto;
+}
+header.fixed .logo img{
+		width:80px;
+		height: auto;
+}
+header .navbar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 35px;
+}
+header .navbar ul li a{
+	font-size: 15px;
+	text-decoration:none;
+	line-height: 72px;
+	color: #ffffff;
+	display: block;
+	font-weight: 600; 
+	position: relative;
+}
+
+header .navbar ul li a:hover {
+	color:black;
+	transition: all 0.4s ease;
+
+}
+.fixed .navbar ul li a{
+	color: black;
+}
+
+.fixed .navbar ul li a:hover {
+	color: #007EB0;
+	transition: all 0.5s ease;
+}
+
+header .button-header{
+	text-align: right;
+}
+
+header .button-header a{
+	border-radius: 4px;
+	color: #ffffff;
+	 padding:12px 25px;
+	 text-decoration: none; 
+	 display: inline-block;
+	 font-size: 14px;
+	 font-weight: 600;
+	 transition: all .5s ease;
+	 background-color: #007EB0;
+}
+header .button-header a:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+
+.home{
+	min-height: 100vh;
+	background-image: url("images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 15px;
+}
+.home .full-screen{
+
+	min-height: 100vh;
+
+}
+
+.home .home-content{
+	
+	flex:0 0 100%;
+	max-width:65%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+.home .home-content .block{
+	
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding-left: 20%;
+	margin-top: 50px;
+}
+.home .home-content .block h6{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.home .home-content .block h1{
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+
+}
+.home .home-content .block h4{
+	color: #ffffff;
+  	font-size: 20px;
+  	font-weight: 300;
+  	margin: 0;
+  	padding: 0;
+  	padding-top: 20px;
+  	padding-right: 40px;
+
+}
+.home .home-content .block .btn{
+	padding-top: 30px;
+}
+.home .home-content .block .btn a{
+	border-radius: 30px;
+	color: #ffffff;
+	border:1px solid #ffffff;
+	 padding:12px 25px;
+	 text-decoration: none; 
+	 display: inline-block;
+	 font-size: 14px;
+	 font-weight: 500;
+	 transition: all .5s ease;
+	 background-color: transparent;
+	 margin-right: 10px;
+}
+.home .home-content .block .btn a:hover{
+	background-color:#007EB0;
+	color: #ffffff;
+	border:1px solid #007EB0;
+
+}
+
+
+.Main-content .content{
+	padding: 30px 0;
+	text-align: center;
+	background-color: #FAFAFA;
+}
+.Main-content .content h2{
+	color: #252B42;
+	font-size: 40px;
+	padding-bottom: 40px;
+	padding-top: 60px;
+}
+.Main-content .content .content-sub2 {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	
+}
+.Main-content .content .content-sub2 img{
+	width: 100%;
+	height: auto;
+}
+.Main-content .content .content-sub2 h3{
+	
+	font-weight: 700;
+	color: #014D8B;
+	font-size: 21px;
+	padding:20px 0;
+}
+
+
+.Main-content .content h4{
+
+	color:#737373;
+	font-size: 15px;
+	font-weight: 500;
+	
+}
+
+
+.message-text{
+	background-color: #014D8B;
+	padding: 80px 15px;
+}
+.message-text .text{
+	flex: 0 0 60%;
+	max-width: 60%;
+	padding-left: 10%;
+}
+.message-text .text h2{
+	font-size: 35px;
+	color: #ffffff;
+	font-weight: 700;
+	margin: 0;
+	line-height: : 35px;
+}
+.message-text .text h3{
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: 400;
+	margin: 0;
+	line-height: : 35px;
+	padding-top:1opx;
+	width:60%;
+	line-height:20px;
+}
+.message-text .button{
+	flex: 0 0 40%;
+	max-width:  40%;
+	text-align: left;
+	padding-top:22px;
+}
+.message-text .button a{
+	color: #ffffff;
+	 padding: 17px 25px;
+	 text-decoration: none; 
+	 display: inline-block;
+	 font-size: 14px;
+	 font-weight: 600;
+	 transition: all .5s ease;
+	 background-color: #007EB0;
+}
+.message-text .button input:focus{
+	color: black;
+	font-weight: 400;
+}
+
+.message-text .button input{
+	color: #ffffff;
+	border-top:1px solid  #014D8B;
+	border-bottom:1px solid  #014D8B;
+	border-left:1px solid  #014D8B;
+	border-right:1px solid  #007EB0;
+	 padding:18px 25px;
+	 text-decoration: none; 
+	 display: inline-block;
+	 font-size: 14px;
+	 font-weight: 600;
+	 transition: all .5s ease;
+	 background-color: #F9F9F9;
+}
+.message-text .button a:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+::placeholder{
+	color: #737373;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+footer{
+	padding: 70px 5%;
+	background-color: ;
+}
+footer .row{
+	display: flex;
+	flex-direction: row;
+}
+footer .row h3{
+	padding-top: 20px;
+	font-size: 22px;
+	color: #252B42;
+	text-align: left;
+}
+footer .row h5{
+	font-size: 14px;
+	color:#737373;
+	font-weight: 600;
+	text-align: left;
+	padding-top: 10px;
+}
+footer .logo{
+	width: 30%;
+	text-align: center;	
+}
+footer .logo img{
+	width: 60%;
+	height: auto;
+}
+footer .empty{
+	width: 7%;
+}
+footer .touch{
+	width:21%;
+	text-align: left;
+	padding-top: 15px;
+}
+footer .touch a{
+	color: #007EB0;
+	text-decoration: none;
+	transition: all .5s ease;
+	text-decoration: none;
+	font-size: 25px;
+	padding-right: 15px;
+}
+footer .touch .social{
+	padding-top: 15px;;
+}
+footer .touch a:hover{
+	color:black;
+}
+footer .info{
+	width:21%;
+	text-align: center;padding-top: 15px;
+}footer .more{
+	width:21%;
+	text-align: center;padding-top: 15px;
+}
+

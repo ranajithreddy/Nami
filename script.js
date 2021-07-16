@@ -1,4 +1,3 @@
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -19,16 +18,13 @@ function closeMenu() {
 }
 
 
-window.onscroll=function(){
-	const docScrollTop=document.documentElement.scrollTop;
-	if(window.innerWidth>991){
-		if(docScrollTop>100){
-			document.querySelector("header").classList.add("fixed")
-		}
-		else{
-			document.querySelector("header").classList.remove("fixed")
-		}
-	}
+window.onscroll = function() {
+    const docScrollTop = document.documentElement.scrollTop;
+    if (window.innerWidth > 991) {
+        if (docScrollTop > 100) {
+            document.querySelector("header").classList.add("fixed")
+        } else {
+            document.querySelector("header").classList.remove("fixed")
+        }
+    }
 }
-
-

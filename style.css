@@ -369,6 +369,7 @@ header .button-header a:hover{
 	color: black;
 	font-weight: 600;
 	outline: none;
+	font-size: 14px;
 }
 
 .message-text .button input{
@@ -395,7 +396,7 @@ header .button-header a:hover{
 }
 @media(max-width:500px){
 	.message-text .button a{
-		 padding: 9px 15px;
+		 padding: 10px 15px 10px 15px;
 	}
 
 	.message-text .button input{

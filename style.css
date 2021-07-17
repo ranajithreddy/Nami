@@ -1168,7 +1168,7 @@ table tbody tr {
 	text-align: center;
 }
 
-form input[type=email],
+.reach form input[type=email],
 select {
 	width: 100%;
 	padding: 10px 20px;
@@ -1180,7 +1180,7 @@ select {
 	box-shadow: 0 0 10px #dbd7d7;
 }
 
-form input[type=text],
+.reach form input[type=text],
 select {
 	width: 100%;
 	padding: 10px 20px;
@@ -1192,7 +1192,7 @@ select {
 	border: none;
 }
 
-form textarea {
+.reach form textarea {
 	width: 100%;
 	padding: 10px 20px;
 	margin: 10px 0;

@@ -502,10 +502,10 @@ footer .touch .social {
 	padding-top: 15px;
 	;
 }
-
+@media (hover: hover) {
 footer .touch .social a:hover {
 	color: #252B42;
-}
+}}
 
 footer .info {
 	width: 21%;

@@ -20,7 +20,7 @@ function closeMenu() {
 
 window.onscroll = function() {
     const docScrollTop = document.documentElement.scrollTop;
-    if (window.innerWidth > 991) {
+    if (window.innerWidth > 0) {
         if (docScrollTop > 100) {
             document.querySelector("header").classList.add("fixed")
         } else {
@@ -28,3 +28,8 @@ window.onscroll = function() {
         }
     }
 }
+
+
+function myFunction() {
+	document.getElementById("Form").reset();
+  }
